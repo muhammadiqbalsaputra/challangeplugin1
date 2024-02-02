@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengisi Form</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <style>
+        input{
+        text-align: left    ;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body class="bg-blue-300">
+
+    <div id="hasilPesan" class="">
+            
+    <h1 class="my-10 text-center text-4xl font-cek text-black animate-bounce">ISI BIODATA DIBAWAH !!!!</h1>
+    <br>
+    <br>
+    <form id="isiForm">
+        <div class="bg-blue-200 shadow-black rounded-xl shadow-lg py-5 px-32 mx-96 text-left">
+            <label class="" for="firstname">Nama Depan</label><br>
+            <input class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" type="text" name="firstname" id="firstname"><br>
+            <label for="lastName">Nama Belakang</label><br>
+            <input class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" type="text" name="lastname" id="lastname"><br>
+            <label for="email">Email</label><br>
+            <input class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" type="text" name="email" id="email"><br>
+            <label for="pesan">pesan</label><br>
+            <textarea class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" name="pesan" id="pesan" cols="20" rows="2"></textarea><br>
+            <button type="button" class=" m-2 p-2 bg-green-500 text-white border-none cursor-pointer rounded-2xl hover:bg-white hover:text-green-700 " onclick="submitForm()">Submit</button>
+            <button tyoe="button" id="reset" class=" m-1 p-2 bg-green-500 text-white border-none cursor-pointer rounded-2xl hover:bg-white hover:text-green-700 " >Clear</button>
+        </div>
+    </form>
+    <script src="index.js"></script>
+    </div>
+</body>
+</html>
